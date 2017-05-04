@@ -3,7 +3,7 @@
     "description": "A middleware to do display an under construction page and an optional login.",
     "require": {
         "php": ">=5.6.4",
-        "laravel/framework": "5.4.*",
+        "laravel/framework": "5.4.*"
     },
     "minimum-stability": "dev"
 }
