@@ -1,9 +1,21 @@
 {
     "name": "jrl05k/laravel-under-construction",
-    "description": "A middleware to do display an under construction page and an optional login.",
+    "type": "library",
+    "description": "Laravel middleware to display under construction message",
+    "keywords": ["laravel", "middleware", "under construction"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jrl05k",
+            "role": "Developer"
+        }
+    ],
     "require": {
-        "php": ">=5.6.4",
-        "laravel/framework": "5.4.*"
+        "php": ">=5.3.0"
     },
-    "minimum-stability": "dev"
+    "autoload": {
+        "psr-0": {
+            "UnderConstruction": "src"
+        }
+    }
 }

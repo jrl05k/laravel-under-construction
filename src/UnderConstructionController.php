@@ -1,6 +1,6 @@
 <?php
 
-namespace Jrl05k\UnderConstruction;
+namespace UnderConstruction;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;

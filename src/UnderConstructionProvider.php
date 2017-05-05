@@ -1,6 +1,6 @@
 <?php
 
-namespace Jrl05k\UnderConstruction;
+namespace UnderConstruction;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -24,6 +24,6 @@ class UnderConstructionProvider extends ServiceProvider
     public function register()
     {
         include __DIR__.'/routes.php';
-        $this->app->make('Jrl05k\UnderConstruction\UnderConstructionController');
+        $this->app->make('UnderConstruction\UnderConstructionController');
     }
 }

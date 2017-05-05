@@ -1,6 +1,6 @@
 <?php
 
-namespace Jrl05k\UnderConstruction;
+namespace UnderConstruction;
 
 use Closure;
 
