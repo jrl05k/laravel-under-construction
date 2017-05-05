@@ -28,18 +28,18 @@ However, it can be enabled to have a login to get past the under construction pa
 ## .env
 You will need to add the following to your .env and set them accordingly
 
-- **UNDER_CONSTRUCTION=**true
-- **UNDER_CONSTRUCTION_ON_LOCALHOST=**{true/false} // false will disable under construction when request ip is 127.0.0.1}
-- **UNDER_CONSTRUCTION_ALLOWED_IP_ADDRESSES=**{8.8.8.8,8.8.4.4} // comma separated string of ip addresses that won't see under construction
-- **UNDER_CONSTRUCTION_LOGIN_ALLOWED=**{true/false} // allow a login page
-- **UNDER_CONSTRUCTION_LOGIN_KEY=**123457890 // if you have a login page set the login key here
+- **UNDER_CONSTRUCTION=** {true/false}
+- **UNDER_CONSTRUCTION_ON_LOCALHOST=** {true/false}
+- **UNDER_CONSTRUCTION_ALLOWED_IP_ADDRESSES=** {8.8.8.8,8.8.4.4} _(also can be blank, null, or false for none)_
+- **UNDER_CONSTRUCTION_LOGIN_ALLOWED=** {true/false}
+- **UNDER_CONSTRUCTION_LOGIN_KEY=** {123457890}
 
 
 ### Settings
 - If UNDER_CONSTRUCTION=true is set in .env, the middleware will redirect to the under construction page for all routes.
 - To have under contruction disabled on localhost set UNDER_CONSTRUCTION_ON_LOCALHOST=false
-- When on server, if you want to access site from your ip or give access to others add the ip addresses separated by commas to the .env UNDER_CONSTRUCTION_ALLOWED_IP_ADDRESSES
-- If you want to give access to someone, but do not have their ip address or the ip address is shared you can enable the login page in .env with UNDER_CONSTRUCTION_LOGIN_ALLOWED=true
+- When on a remote server, if you want to access the site from your ip, or give access to others, add the ip addresses separated by commas to the .env UNDER_CONSTRUCTION_ALLOWED_IP_ADDRESSES
+- If you want to give access to someone, but do not have their ip address, or the ip address is shared, you can enable the login page in .env with UNDER_CONSTRUCTION_LOGIN_ALLOWED=true
 - If you are using the login page set the key in .env UNDER_CONSTRUCTION_LOGIN_KEY
 
 
