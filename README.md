@@ -14,11 +14,11 @@ However, when you are ready to go live and no longer need the under construction
 
 
 ## Provider
-Add **Jrl05k\UnderConstruction\UnderConstructionProvider::class** to _config/app.php_ providers.
+Add **UnderConstruction\UnderConstructionProvider::class** to _config/app.php_ providers.
 
 
 ## Middleware
-Add **\Jrl05k\UnderConstruction\RedirectIfUnderConstructionMiddleware::class** to _Kernel.php_ middlewareGroups web. 
+Add **\UnderConstruction\RedirectIfUnderConstructionMiddleware::class** to _Kernel.php_ middlewareGroups web. 
 
 It's a simple middleware that will redirect to an "under construction" page. 
 
@@ -46,7 +46,7 @@ You will need to add the following to your .env and set them accordingly
 ## Disable 
 To temporarily turn off the under construction message, you can set the .env UNDER_CONSTRUCTION variable to false. 
 
-But to permanently disable it when it is no longer needed for a live production site, you should remove the **\Jrl05k\UnderConstruction\RedirectIfUnderConstructionMiddleware::class** middleware from the Kernel.php.
+But to permanently disable it when it is no longer needed for a live production site, you should remove the **\UnderConstruction\RedirectIfUnderConstructionMiddleware::class** middleware from the Kernel.php.
 Keeping it in middleware and just disabling it by the .env setting will have a performance cost; so it is best to remove it completely from the Kernel.php middleware.
 
 _You can also remove the provider to clean things up more thoroughly._
