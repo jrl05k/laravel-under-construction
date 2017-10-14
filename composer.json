@@ -17,5 +17,12 @@
         "psr-0": {
             "UnderConstruction": "src"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "UnderConstruction\\UnderConstructionProvider"
+            ]
+        }
     }
 }

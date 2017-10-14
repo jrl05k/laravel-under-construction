@@ -34,7 +34,7 @@ It's a simple middleware that will redirect to an "under construction" page.
 
 But, it can be enabled to have a login to bypass the under construction page.
 
-Add **\UnderConstruction\RedirectIfUnderConstructionMiddleware::class** to _Kernel.php_ middlewareGroups web. 
+Add **\UnderConstruction\RedirectIfUnderConstructionMiddleware::class** to _Kernel.php_ middlewareGroups web. (only for <5.5.x)
 ```php
   protected $middlewareGroups = [
     'web' => [
