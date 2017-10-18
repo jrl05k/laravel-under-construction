@@ -16,7 +16,7 @@ However, when you are ready to go live and no longer need the under construction
 composer require jrl05k/laravel-under-construction
 
 ## Provider
-Add **UnderConstruction\UnderConstructionProvider::class** to _config/app.php_ providers.
+Add **UnderConstruction\UnderConstructionProvider::class** to _config/app.php_ providers. (only for <5.5.x)
 ```php
   'providers' => [
     ...
@@ -34,7 +34,7 @@ It's a simple middleware that will redirect to an "under construction" page.
 
 But, it can be enabled to have a login to bypass the under construction page.
 
-Add **\UnderConstruction\RedirectIfUnderConstructionMiddleware::class** to _Kernel.php_ middlewareGroups web. (only for <5.5.x)
+Add **\UnderConstruction\RedirectIfUnderConstructionMiddleware::class** to _Kernel.php_ middlewareGroups web.
 ```php
   protected $middlewareGroups = [
     'web' => [
