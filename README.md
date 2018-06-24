@@ -87,7 +87,20 @@ Example:
       ...
     });
   ```    
-    
+  
+## Custom views
+If you want to use a custom under construction page, you can over-ride the views by placing view file in path:
+
+> resources/views/vendor/underconstruction/under_construction.blade.php
+
+
+Likewise, to over-ride the log in create your view in path: 
+
+> resources/views/vendor/underconstruction/under_construction_login.blade.php
+
+
+
+
 ## Disable 
 To temporarily turn off the under construction message, you can set the .env UNDER_CONSTRUCTION variable to false. 
 
