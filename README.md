@@ -13,8 +13,9 @@ You can enable/disable the under construction message for everyone at any point 
 However, when you are ready to go live and no longer need the under construction message, you should remove the middleware from the kernel.
 
 ## Installation
-composer require jrl05k/laravel-under-construction
-
+```bash
+composer require devswebdev/devtube
+```
 ## Provider
 Add **UnderConstruction\UnderConstructionProvider::class** to _config/app.php_ providers. (only for <5.5.x)
 ```php
